@@ -2,6 +2,17 @@
     margin-top: 15vh;
     background-color: #020202;
     position: relative;
+    transition: all .5s ease-in;
+}
+
+.PaginaInicial.active{
+    display: none;
+    transition: display .5s ease;
+}
+
+.Navegar.active{
+    display: none;
+    animation: Sumir .5s easy;
 }
 
 .PaginaInicial .PaginaInicialConteudo{
@@ -21,8 +32,9 @@
 }
 .PaginaInicial .Nome h1{
     font-size: 5vw;
+    border-bottom: 2px solid white;
 }
-.PaginaInicial .Nome h1::after{
+/* .PaginaInicial .Nome h1::after{
     content: '';
     position: absolute;
     background-color: #ffffff;
@@ -30,7 +42,7 @@
     top: 20vh;
     left: 10vw;
     z-index: 2;
-}
+} */
 
 .PaginaInicial .Nome h2{
     font-size: 3vw;
@@ -78,18 +90,9 @@ overflow: hidden;
 
 .Navegar{
     background-color: #020202;
-    border: none;
+    border-bottom: 2px solid white;
     color: white;
     font-size: 2vw;
-}
-.Navegar::after{
-    content: '';
-    position: absolute;
-    background-color: #ffffff;
-    padding: 1px 5vw;
-    top: 36vh;
-    left: 45vw;
-    z-index: 2;
 }
 
 .Navegar:hover{
@@ -101,16 +104,6 @@ overflow: hidden;
 
 @media (max-width: 1600px) {
 
-    .Navegar::after{
-        content: '';
-        position: absolute;
-        background-color: #ffffff;
-        padding: 1px 5vw;
-        top: 33vh;
-        left: 45vw;
-        z-index: 2;
-    }
-    
     .PaginaInicial .PaginaInicialConteudo .Imagem img{
         width: 11vw;
         position: absolute;
@@ -138,7 +131,7 @@ overflow: hidden;
         left: 12vw;
         z-index: 2;
     }
-    .PaginaInicial .Nome h1::after{
+    /* .PaginaInicial .Nome h1::after{
         content: '';
         position: absolute;
         background-color: #ffffff;
@@ -147,18 +140,10 @@ overflow: hidden;
         left: 10vw;
         z-index: 2;
     }
-}
+} */
 
 @media (max-width: 1360px) {
-    .Navegar::after{
-        content: '';
-        position: absolute;
-        background-color: #ffffff;
-        padding: 1px 5vw;
-        top: 28vh;
-        left: 45vw;
-        z-index: 2;
-    }
+
     
     .PaginaInicial .PaginaInicialConteudo .Imagem img{
         width: 10vw;
@@ -187,27 +172,19 @@ overflow: hidden;
         left: 12vw;
         z-index: 2;
     }
-    .PaginaInicial .Nome h1::after{
+    /* .PaginaInicial .Nome h1::after{
         content: '';
         position: absolute;
         background-color: #ffffff;
         padding: 1px 16vw;
         top: 16vh;
         left: 10vw;
-        z-index: 2;
+        z-index: 2; */
     }
 }
 
 @media (max-width: 1240px) {
-    .Navegar::after{
-        content: '';
-        position: absolute;
-        background-color: #ffffff;
-        padding: 1px 5vw;
-        top: 23vh;
-        left: 45vw;
-        z-index: 2;
-    }
+
     
     .PaginaInicial .PaginaInicialConteudo .Imagem img{
         width: 8vw;
@@ -236,27 +213,59 @@ overflow: hidden;
         left: 14vw;
         z-index: 2;
     }
-    .PaginaInicial .Nome h1::after{
+    /* .PaginaInicial .Nome h1::after{
         content: '';
         position: absolute;
         background-color: #ffffff;
         padding: 1px 16vw;
         top: 14vh;
         left: 10vw;
-        z-index: 2;
+        z-index: 2; */
     }
 }
 
-@media (max-width:1024px) {
-    .Navegar::after{
+@media (max-width:1024px){
+    
+    .PaginaInicial .PaginaInicialConteudo .Imagem img{
+        width: 8vw;
+        position: absolute;
+        left: 25vw;
+        top: 13vh;
+        z-index: 4;
+        border: 5px solid #020202;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::after{
+        content: '';
+        position: absolute;
+        background-color:#353535;
+        border: 5px solid #020202;
+        padding: 5vh 3.5vw;
+        left: 19vw;
+        z-index: 2;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::before{
+        content: '';
+        position: absolute;
+        background-color: #0e0e0e;
+        border: 5px solid #020202;
+        padding: 5vh 4vw;
+        top: 5vh;
+        left: 14vw;
+        z-index: 1;
+    }
+    /* .PaginaInicial .Nome h1::after{
         content: '';
         position: absolute;
         background-color: #ffffff;
-        padding: 1px 5vw;
-        top: 20vh;
-        left: 45vw;
+        padding: 1px 16vw;
+        top: 18vh;
+        left: 10vw;
         z-index: 2;
-    }
+    } */
+}
+
+@media (max-heigth:1024px) {
+
     
     .PaginaInicial .PaginaInicialConteudo .Imagem img{
         width: 8vw;

@@ -1,3 +1,48 @@
 .Apresentacao{
     display: none;
+    position: relative;
+}
+
+.Apresentacao.active{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.Apresentacao .NavegarMais{
+    background-color: #020202;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 2vw;
+}
+
+.NavegarMais:hover{
+    animation-name: EsmaecerBotao;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.Apresentacao .MinhaPessoa{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 8vw 0 8vw;
+}
+
+.Apresentacao .MinhaPessoa div h1{
+    
+}
+.Apresentacao .MinhaPessoa div h1{
+    font-size: 4vw;
+}
+
+.Apresentacao .MinhaPessoa div h2{
+    font-size: 1.5vw;
+}
+.Apresentacao .MinhaPessoa i{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
