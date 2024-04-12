@@ -1,3 +1,41 @@
 .Projetos{
     display: none;
 }
+
+.Projetos.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: blue; */
+    color: white;
+}
+
+.ProjetosConteudo{
+    /* margin-top: 30vh; */
+    padding: 3vh 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ProjetosConteudo div{
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.Atracar{
+    margin-top: 15vh;
+    background-color: #020202;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 2vw;
+}
+
+.Atracar:hover{
+    animation-name: EsmaecerBotao;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}

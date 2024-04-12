@@ -6,7 +6,6 @@
 .Apresentacao.active{
     display: flex;
     flex-direction: column;
-    margin-left: 0;
 }
 
 .Apresentacao .NavegarMais{
@@ -29,9 +28,6 @@
     margin: 0 8vw 0 8vw;
 }
 
-.Apresentacao .MinhaPessoa div h1{
-    
-}
 .Apresentacao .MinhaPessoa div h1{
     font-size: 4vw;
 }
