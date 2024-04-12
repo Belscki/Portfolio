@@ -1,0 +1,307 @@
+.PaginaInicial{
+    margin-top: 15vh;
+    background-color: #020202;
+    position: relative;
+}
+
+.PaginaInicial .PaginaInicialConteudo{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vh 2vw;
+    overflow: hidden;
+}
+
+.PaginaInicial .Nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: ;
+}
+.PaginaInicial .Nome h1{
+    font-size: 5vw;
+}
+.PaginaInicial .Nome h1::after{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    padding: 1px 16vw;
+    top: 20vh;
+    left: 10vw;
+    z-index: 2;
+}
+
+.PaginaInicial .Nome h2{
+    font-size: 3vw;
+    margin-top: 1vh;
+}
+.PaginaInicial .PaginaInicialConteudo .Imagem{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+overflow: hidden;
+}
+
+.PaginaInicial .PaginaInicialConteudo .Imagem img{
+    width: 12vw;
+    position: absolute;
+    left: 25vw;
+    top: 14vh;
+    z-index: 4;
+    border: 5px solid #020202;
+}
+.PaginaInicial .PaginaInicialConteudo .Imagem::after{
+    content: '';
+    position: absolute;
+    background-color:#353535;
+    border: 5px solid #020202;
+    padding: 12vh 6vw;
+    left: 17vw;
+    z-index: 2;
+}
+.PaginaInicial .PaginaInicialConteudo .Imagem::before{
+    content: '';
+    position: absolute;
+    background-color: #060606;
+    border: 5px solid #020202;
+    padding: 12vh 6vw;
+    top: 0;
+    left: 12vw;
+    z-index: 2;
+}
+
+.Navegar{
+    margin-top: 15%;
+}
+
+.Navegar{
+    background-color: #020202;
+    border: none;
+    color: white;
+    font-size: 2vw;
+}
+.Navegar::after{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    padding: 1px 5vw;
+    top: 36vh;
+    left: 45vw;
+    z-index: 2;
+}
+
+.Navegar:hover{
+    animation-name: EsmaecerBotao;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 1600px) {
+
+    .Navegar::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        padding: 1px 5vw;
+        top: 33vh;
+        left: 45vw;
+        z-index: 2;
+    }
+    
+    .PaginaInicial .PaginaInicialConteudo .Imagem img{
+        width: 11vw;
+        position: absolute;
+        left: 25vw;
+        top: 14vh;
+        z-index: 4;
+        border: 5px solid #020202;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::after{
+        content: '';
+        position: absolute;
+        background-color:#353535;
+        border: 5px solid #020202;
+        padding: 9vh 6vw;
+        left: 17vw;
+        z-index: 2;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::before{
+        content: '';
+        position: absolute;
+        background-color: #060606;
+        border: 5px solid #020202;
+        padding: 9vh 6vw;
+        top: 0;
+        left: 12vw;
+        z-index: 2;
+    }
+    .PaginaInicial .Nome h1::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        padding: 1px 16vw;
+        top: 17vh;
+        left: 10vw;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 1360px) {
+    .Navegar::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        padding: 1px 5vw;
+        top: 28vh;
+        left: 45vw;
+        z-index: 2;
+    }
+    
+    .PaginaInicial .PaginaInicialConteudo .Imagem img{
+        width: 10vw;
+        position: absolute;
+        left: 25vw;
+        top: 14vh;
+        z-index: 4;
+        border: 5px solid #020202;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::after{
+        content: '';
+        position: absolute;
+        background-color:#353535;
+        border: 5px solid #020202;
+        padding: 8vh 5.5vw;
+        left: 17vw;
+        z-index: 2;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::before{
+        content: '';
+        position: absolute;
+        background-color: #060606;
+        border: 5px solid #020202;
+        padding: 8vh 5.5vw;
+        top: 0;
+        left: 12vw;
+        z-index: 2;
+    }
+    .PaginaInicial .Nome h1::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        padding: 1px 16vw;
+        top: 16vh;
+        left: 10vw;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 1240px) {
+    .Navegar::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        padding: 1px 5vw;
+        top: 23vh;
+        left: 45vw;
+        z-index: 2;
+    }
+    
+    .PaginaInicial .PaginaInicialConteudo .Imagem img{
+        width: 8vw;
+        position: absolute;
+        left: 25vw;
+        top: 14vh;
+        z-index: 4;
+        border: 5px solid #020202;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::after{
+        content: '';
+        position: absolute;
+        background-color:#353535;
+        border: 5px solid #020202;
+        padding: 5vh 4vw;
+        left: 19vw;
+        z-index: 2;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::before{
+        content: '';
+        position: absolute;
+        background-color: #060606;
+        border: 5px solid #020202;
+        padding: 5vh 4vw;
+        top: 0;
+        left: 14vw;
+        z-index: 2;
+    }
+    .PaginaInicial .Nome h1::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        padding: 1px 16vw;
+        top: 14vh;
+        left: 10vw;
+        z-index: 2;
+    }
+}
+
+@media (max-width:1024px) {
+    .Navegar::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        padding: 1px 5vw;
+        top: 20vh;
+        left: 45vw;
+        z-index: 2;
+    }
+    
+    .PaginaInicial .PaginaInicialConteudo .Imagem img{
+        width: 8vw;
+        position: absolute;
+        left: 25vw;
+        top: 13vh;
+        z-index: 4;
+        border: 5px solid #020202;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::after{
+        content: '';
+        position: absolute;
+        background-color:#353535;
+        border: 5px solid #020202;
+        padding: 4vh 3.5vw;
+        left: 19vw;
+        z-index: 2;
+    }
+    .PaginaInicial .PaginaInicialConteudo .Imagem::before{
+        content: '';
+        position: absolute;
+        background-color: #060606;
+        border: 5px solid #020202;
+        padding: 4vh 3.5vw;
+        top: 0;
+        left: 14vw;
+        z-index: 2;
+    }
+    .PaginaInicial .Nome h1::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        padding: 1px 16vw;
+        top: 13vh;
+        left: 10vw;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    
+}
+@media (max-width: 481px) {
+    
+}
+@media (max-width: 360px) {
+    
+}
