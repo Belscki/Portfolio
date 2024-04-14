@@ -1,3 +1,27 @@
 .Contatos{
     display: none;
 }
+
+.Contatos.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+.NavegarNovamente{
+    margin-top: 15vh;
+    background-color: #020202;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 2vw;
+}
+
+.NavegarNovamente:hover{
+    animation-name: EsmaecerBotao;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}

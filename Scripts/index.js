@@ -6,6 +6,9 @@ const Conhecimento = document.querySelector(".Conhecimento");
 const NavegarMais = document.querySelector(".NavegarMais");
 const NavegarMaisMais = document.querySelector(".NavegarMaisMais");
 const Projetos = document.querySelector(".Projetos");
+const Atracar = document.querySelector(".Atracar");
+const Contatos = document.querySelector(".Contatos");
+const NavegarNovamente = document.querySelector(".NavegarNovamente");
 
 Navegar.addEventListener('click', ()=>{
     PaginaInicial.classList.toggle('active');
@@ -23,6 +26,15 @@ NavegarMaisMais.addEventListener('click', ()=>{
     Projetos.classList.toggle("active");
 })
 
+Atracar.addEventListener('click', () =>{
+    Projetos.classList.toggle("active");
+    Contatos.classList.toggle("active");
+})
 
+NavegarNovamente.addEventListener('click', ()=>{
+    Contatos.classList.toggle("active");
+    PaginaInicial.classList.toggle("active");
+    Navegar.classList.toggle("active");
+})
 
 
