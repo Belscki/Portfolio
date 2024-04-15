@@ -25,3 +25,13 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
+.ContatosConteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10vh;
+}
+
+.ContatosConteudo img{
+    width: 5vw;
+}

@@ -20,9 +20,17 @@
 }
 
 .ProjetosConteudo div{
-    margin-top: 10vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    color: black;
+    font-size: 1vw;
+    padding: 10vh 10vw;
+    margin-left: 1vw;
+    margin-top: 5vh;
+    background-image: url("https://imgs.search.brave.com/cC-0i5a7jzgT4lP5h7GVmis9qXY9qnK53YH4JXkU8-E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjIy/ODAwODU2L3B0L2Zv/dG8vaW5kdXN0cmlh/bC1icmlja2xheWVy/LXdvcmtlci1wbGFj/aW5nLWJyaWNrcy1v/bi1jZW1lbnQtd2hp/bGUtYnVpbGRpbmct/d2FsbHMuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPU9nODBq/SnF4Q0RCUTVGM0Q4/aUgxcEZ6aEJkaWJE/Mk1vZ0hybFlGVS02/UFk9");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+    border-radius: 15%;
+
 }
 
 .Atracar{
