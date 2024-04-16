@@ -47,6 +47,21 @@
 .ContatosConteudo img{
     width: 15vw;
 }
+.PaginaInicial .Nome h2{
+    font-size: 5vw;
+    margin-top: 1vh;
+}
+.PaginaInicial .Nome h1{
+    font-size: 7vw;
+    border-bottom: 2px solid white;
+}
+.Navegar{
+    background-color: #020202;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 5vw;
+}
+
 }
 @media (max-width: 481px) {
  

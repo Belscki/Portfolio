@@ -28,7 +28,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: ;
 }
 .PaginaInicial .Nome h1{
     font-size: 5vw;
@@ -53,7 +52,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-overflow: hidden;
+    overflow: hidden;
 }
 
 .PaginaInicial .PaginaInicialConteudo .Imagem img{
