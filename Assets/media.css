@@ -16,10 +16,48 @@
 }
 
 @media (max-width: 768px) {
-    
+     
+.PaginaInicial .PaginaInicialConteudo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    overflow: hidden;
+}
+
+.Apresentacao .MinhaPessoa{
+    display: flex;
+    flex-direction: column;
+    margin: 0 8vw 0 8vw;
+}
+.Apresentacao .MinhaPessoa i{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: rotate(90deg);
+}
+.ProjetosConteudo{
+    /* margin-top: 30vh; */
+    padding: 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.ContatosConteudo img{
+    width: 15vw;
+}
 }
 @media (max-width: 481px) {
-    
+ 
+.PaginaInicial .PaginaInicialConteudo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    overflow: hidden;
+}
+   
 }
 @media (max-width: 360px) {
     
