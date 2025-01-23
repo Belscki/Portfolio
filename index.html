@@ -1,8 +1,60 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+
 <head>
-  <title>Arthur</title>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/ab.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arthur Bergamascki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
+
 <body>
-  <div style="displey:flex; justify-content: center; aligh-items:center;">
-    <h1>Meu dominio Tião</h1>
-  </div>
+  <canvas id="bg"></canvas>
+  <main>
+    <header>
+      <ul>
+        <li><a href="#startPoint">TOPO</a></li>
+        <li><a href="#sobrePoint">SOBREMIM</a></li>
+        <li><a href="#Projetos">PROJETOS</a></li>
+        <li><a href="">CONTATO</a></li>
+      </ul>
+    </header>
+    <h3 id="startPoint" style="opacity: 0;">-</h3>
+    <section id="Apresentacao">
+      <h1>Testes</h1>
+      <h2>E sou <span>Desenvolvedor FullStack</span></h2>
+    </section>
+
+    <section id="Sobremim">
+      <h3 id="sobrePoint" style="opacity: 0; margin-top: 1vh;">-</h3>
+      <h1>Texto Sobre mim</h1>
+      <h1>
+        Atualmente, estou cursando Engenharia da Computação e moro em Guarulhos-SP. Falo inglês fluentemente e tenho um
+        nível intermediário de espanhol. Durante meu estágio na Kafnet, atuei como Full-Stack, o que me permitiu ganhar
+        experiência prática no desenvolvimento de sistemas e trabalhar com diversas tecnologias.
+      </h1>
+    </section>
+
+    <section id="Projetos" ng-controller="projetoController">
+      <div ng-repeat="proj in projetos">
+        <h1>{{proj.nome}}</h1>
+        <h2>{{proj.descricao}}</h2>
+        <button><a href="{{proj.projLink}}">Ir</a></button>
+    </section>
+
+
+
+  </main>
+
+  <script type="module" src="/src/moviment.js"></script>
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/angular.js"></script>
 </body>
+
+</html>
