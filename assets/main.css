@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--cor-bg-principal);
-    /* background-color: var(--cor-secundaria); */
     font-family: var(--fonte);
     overflow: hidden;
 
@@ -30,7 +29,7 @@ body {
         & label {
             font-size: 24px;
         }
-
+        
         & input {
             background-color: var(--cor-bg-principal);
             font-size: 24px;
@@ -40,6 +39,4 @@ body {
             border: 2px solid black;
         }
     }
-
-
 }
